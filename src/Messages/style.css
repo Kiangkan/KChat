@@ -1,0 +1,27 @@
+*{box-sizing: border-box;}
+.users {
+    height: 80px;
+    width: 100%;
+}
+.users * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.usersImg img {
+    height: 100%;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.usersData {
+    height: 100%;
+    padding: 10px;
+}
+.usersData * {
+    line-height: 5px;
+    display: block;
+}
+.users:hover {
+    background-color: gray;
+    cursor: pointer;
+}

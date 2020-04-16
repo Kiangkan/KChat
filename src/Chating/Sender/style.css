@@ -1,0 +1,38 @@
+#textItem,#sendBtn {
+    padding: 10px;
+    height: 40px;
+}
+#textItem {
+    width: 100%;
+    border: 1px solid black;
+    cursor: text;
+    overflow-y: scroll;
+}
+#textItem::-webkit-scrollbar {
+    display: none;
+}
+#sendBtn {
+    padding: 0px;
+    border: 0px;
+    width: 0px;
+}
+.texting {
+    display: inline-block;
+}
+.texting,#sendBtn {
+    transition: 0.3s;
+    vertical-align: middle;
+}
+#sender {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 15vh;
+    background-color: white;
+}
+.coming p {
+    background-color: black;
+    color: aqua;
+    text-align: center;
+}

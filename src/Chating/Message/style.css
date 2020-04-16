@@ -1,0 +1,65 @@
+.msgInner {
+    max-width: 60%;
+    float: left;
+    clear: both;
+    margin-bottom: 17px;
+}
+.msgInner.self {
+    float: right;
+    clear: both;
+}
+.msgInner .message {
+    background-color: gray;
+}
+.msgInner.self .message {
+    background-color: blue;
+}
+.message p {
+    padding: 5px 15px;
+    margin: 5px 0px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    white-space: pre-line;
+}
+.message {
+    border-radius: 30px;
+    max-width: max-content;
+}
+.itemBirth {
+    text-align: right;
+    white-space: pre;
+    max-width: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.msgInner:hover .itemBirth {
+    max-height: 100%;
+    max-width: 100%;
+}
+.userImage img {
+    border-radius: 30px;
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    overflow: hidden;
+}
+.userImage, .message {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.msgInner::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+.msgInner::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+.msgInner::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
